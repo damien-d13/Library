@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.damien.library.controller.MainController">
+   <children>
+      <TextField fx:id="bookId" layoutX="30.0" layoutY="44.0" prefHeight="25.0" prefWidth="181.0" promptText="Id" />
+      <TextField fx:id="bookTitle" layoutX="30.0" layoutY="104.0" prefHeight="25.0" prefWidth="181.0" promptText="Title" />
+      <TextField fx:id="bookAuthor" layoutX="30.0" layoutY="166.0" prefHeight="25.0" prefWidth="181.0" promptText="Author" />
+      <TextField fx:id="bookYears" layoutX="30.0" layoutY="220.0" prefHeight="25.0" prefWidth="181.0" promptText="Years" />
+      <TextField fx:id="bookNbPages" layoutX="30.0" layoutY="280.0" prefHeight="25.0" prefWidth="181.0" promptText="NbPages" />
+      <Button layoutX="21.0" layoutY="346.0" mnemonicParsing="false" onAction="#onInsertAction" text="Insert" />
+      <Button layoutX="84.0" layoutY="346.0" mnemonicParsing="false" onAction="#onUpdateAction" text="Update" />
+      <Button layoutX="159.0" layoutY="346.0" mnemonicParsing="false" onAction="#onDeleteAction" text="Delete" />
+      <TableView layoutX="224.0" layoutY="29.0" prefHeight="349.0" prefWidth="354.0">
+        <columns>
+          <TableColumn prefWidth="27.0" text="Id" />
+          <TableColumn prefWidth="113.0" text="Title" />
+            <TableColumn prefWidth="106.0" text="Author" />
+            <TableColumn prefWidth="48.0" text="Years" />
+            <TableColumn prefWidth="59.0" text="NbPages" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
