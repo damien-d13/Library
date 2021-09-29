@@ -2,59 +2,60 @@ package fr.damien.library.entity;
 
 public class Book {
 
-    private int _id;
-    private String _title = "";
-    private String _author;
-    private int _years;
-    private int _nbPages;
+    private int id;
+    private String title = "";
+    private String author;
+    private int years;
+    private int nbPages;
 
 
     public Book(int id, String title, String author, int years, int nbPages ) {
-        this._id = id;
-        this._title = title;
-        this._author = author;
-        this._years = years;
-        this._nbPages = nbPages;
-
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.years = years;
+        this.nbPages = nbPages;
     }
 
+//    public Book() {}
+
     public int getId() {
-        return _id;
+        return id;
     }
 
     public void setId(int id) {
-        this._id = id;
+        this.id = id;
     }
 
     public String getTitle() {
-        return _title;
+        return title;
     }
 
     public void setTitle(String title) {
-        this._title = title;
+        this.title = title;
     }
 
     public String getAuthor() {
-        return _author;
+        return author;
     }
 
     public void setAuthor(String author) {
-        this._author = author;
+        this.author = author;
     }
 
     public int getYears() {
-        return _years;
+        return years;
     }
 
     public void setYears(int years) {
-        this._years = years;
+        this.years = years;
     }
 
     public int getNbPages() {
-        return _nbPages;
+        return nbPages;
     }
 
     public void setNbPages(int nbPages) {
-        this._nbPages = nbPages;
+        this.nbPages = nbPages;
     }
 }

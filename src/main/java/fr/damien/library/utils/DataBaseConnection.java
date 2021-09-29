@@ -4,9 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class DataBaseConnection {
-    private Connection databaseLink;
+    private static Connection databaseLink;
 
-    public Connection getConnection() {
+    public static Connection getConnection() {
         String db = "library";
         String user = "root";
         String password = "";
@@ -15,7 +15,7 @@ public class DataBaseConnection {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             databaseLink = DriverManager.getConnection(url, user, password);
-            System.out.println("Connecté !!!");
+//            System.out.println("Connecté !!!");
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Erreur de connexion");

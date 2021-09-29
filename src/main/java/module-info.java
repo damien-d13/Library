@@ -5,6 +5,8 @@ module fr.damien.library {
     requires java.sql;
     requires mysql.connector.java;
 
+    opens fr.damien.library.entity to javafx.base;
+
     opens fr.damien.library to javafx.fxml;
     exports fr.damien.library;
     exports fr.damien.library.controller;
