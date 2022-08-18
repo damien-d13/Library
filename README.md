@@ -1,6 +1,6 @@
 # Intro:
 
-This project is an exercise to understand the functioning of a java application linked to a database
+This project is an exercise to understand the functioning of a java library management application linked to a database
 
 ## Table of Contents
 
